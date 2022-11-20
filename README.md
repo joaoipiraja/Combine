@@ -24,11 +24,12 @@ var cancellables = Set<AnyCancellable>()
 ```
 
 ### Mixing Publishers 
-- `.zip(publisher)`
+- `.zip(publisher)` ou `.merge(publisher)`
 
 ```swift
 
 foodBank.zip(timer)
+foodBank.merge(//same output)
 
 ```
 ### Mapping: Transforming a Sequence
